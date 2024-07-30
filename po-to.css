@@ -1,0 +1,322 @@
+body{
+    padding-top:80px;
+}
+
+.about{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .about-img{
+    width: 45%;
+    aspect-ratio: 56/45;
+    object-fit: cover;
+    margin-top:20px;
+    border-radius:8px;
+  }
+  .about-name{
+    padding:10px;
+    padding-left:20px;
+    font-size:40px;
+    color:blueviolet;
+    background-color:plum;
+    border-radius:50px;
+  }
+  .about-caption{
+    width:45%;
+    padding-top: 40px;
+  }
+  .about-job{
+    margin-top: 4px;
+    font-size:24px;
+  }
+.about-text{
+    margin-top: 24px;
+    font-size: 18px;
+}
+.sns{
+    margin-top: 24px;
+    display:flex;
+    gap:8px;
+}
+.skill{
+    width:90%;
+    max-width: 1200px;
+    margin: 120px auto 0;
+    /* text-align:center; */
+}
+.skill h2{
+    font-size:48px;
+    line-height:1.2;
+    color:blueviolet;
+}
+.skill-content{
+    margin-top:48px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:2%;
+}
+.skill-item{
+    width:23%;
+    margin-bottom:1%;
+}
+.skill-item img{
+    width:100%;
+    aspect-ratio:29/18;
+    object-fit:cover;
+    border-radius:8px;
+}
+.skill-item span{
+    color:blueviolet;
+    font-size:20px;
+    line-height:1.2;
+    margin-top:4px;
+    padding:10px;
+    padding-left:10px;
+    font-weight:500;
+    background-color:plum;
+    border-radius:50px;
+}
+.works{
+    padding-top:200px;
+}
+.title{
+    padding:10px;
+    padding-left:30px;
+    background-color:plum;
+    border-radius:50px;
+}
+
+.works-title{
+    margin:0 auto;
+    margin-top:48px;
+    margin-bottom:50px;
+    display:flex;
+    line-height:1.2;
+    font-size:48px;
+    width:90%;
+    max-width:1200px;
+    padding:10px;
+    padding-left:20px;
+    background-color:plum;
+    color:blueviolet;
+    border-radius:50px;
+}
+.Header{
+    display: flex;
+    align-items: center;
+    background-color:darkorchid;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:80px;
+    padding:10px;
+    color:white;
+    z-index:99999;
+    font-size:35px;
+    gap:20px;
+}
+.Header img{
+    width:80px;
+    /* margin:-20px; */
+}
+
+ /* .works li{
+    list-style:none;
+    width:30%;
+    margin:10px;
+    margin:70px auto 0;
+} */
+/* .works-list{
+    display:flex;
+    flex-wrap:wrap;
+}
+.works-list img{
+    width: 100%;
+    aspect-ratio:29/20;
+    object-fit:cover;
+    border-radius:20px;
+} */ 
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+    width:94%;
+    margin:0 auto;
+}
+
+.slider img {
+    width:60vw;/*スライダー内の画像を60vwにしてレスポンシブ化*/
+    height:auto;
+    border-radius:30px;
+}
+
+.slider .slick-slide {
+	transform: scale(0.8);/*左右の画像のサイズを80%に*/
+	transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
+	opacity: 0.5;/*透過50%*/
+}
+
+.slider .slick-slide.slick-center{
+	transform: scale(1);/*中央の画像のサイズだけ等倍に*/
+	opacity: 1;/*透過なし*/
+}
+
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+    position: absolute;/*絶対配置にする*/
+    top: 42%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #666;/*矢印の色*/
+    border-right: 2px solid #666;/*矢印の色*/
+    height: 15px;
+    width: 15px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+    left: -1.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+    right: -1.5%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+    text-align:center;
+	margin:20px 0 0 0;
+}
+
+.slick-dots li {
+    display:inline-block;
+	margin:0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;/*ドットボタンのサイズ*/
+    height:8px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background:#ccc;/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button{
+    background:#333;/*ドットボタンの現在地表示の色*/
+}
+html,body{
+	height: 100%;/*高さを100%にして描画エリアをとる*/
+}
+
+#particles-js{ 
+	position:fixed;/*描画固定*/
+	z-index:-1;/*描画を一番下に*/
+	width: 100%;
+	height: 100%;
+	background-color:#FEE7E7;/*背景色*/
+}
+
+#wrapper{
+	position: relative;/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+	z-index: 1;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+	width:100%;
+	height: 100%;
+}
+
+
+/*リンクの形状*/
+#page-top a{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	background:darkorchid;
+	border-radius: 5px;
+	width: 60px;
+	height: 60px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase; 
+	text-decoration: none;
+	font-size:0.6rem;
+	transition:all 0.3s;
+}
+
+#page-top a:hover{
+	background: #777;
+}
+
+/*リンクを右下に固定*/
+#page-top {
+	position: fixed;
+	right: 10px;
+	bottom:10px;
+	z-index: 2;
+    /*はじめは非表示*/
+	opacity: 0;
+	transform: translateX(100px);
+}
+
+/*　左の動き　*/
+
+#page-top.LeftMove{
+	animation: LeftAnime 0.5s forwards;
+}
+
+@keyframes LeftAnime{
+  from {
+    opacity: 0;
+	transform: translateX(100px);
+  }
+  to {
+    opacity: 1; 
+	transform: translateX(0);
+  }
+}
+
+/*　右の動き　*/
+
+#page-top.RightMove{
+	animation: RightAnime 0.5s forwards;
+}
+@keyframes RightAnime{
+  from {
+  	opacity: 1;
+	transform: translateX(0);
+  }
+  to {
+  	opacity: 1;
+	transform: translateX(100px);
+  }
+}
+
+
+
+/* スマホ版 */
+@media screen and (max-width:800px){
+    .Header{
+        font-size:25px;
+    }
+    .about{
+        flex-direction:column;
+    }
+    .about-img{
+        width:100%;
+    }
+    .about-caption{
+        width:100%;
+    }
+}
